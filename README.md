@@ -7,8 +7,8 @@ Everyone tries to screw the dealer in a bad way.
 Each player is dealt a card. The player with the lowest card (Aces high/2s low) is initially designated as the dealer. The dealer collects all the cards and shuffles.
 
 ### Language:
-**(X)**: Drinks or whatever rules you would like to do. Drinking is not necessary to play the game.
-**Take(s) n:** n is the amount of (X).
+* **(X)**: Drinks or whatever rules you would like to do. Drinking is not necessary to play the game.
+* **Take(s) n:** n is the amount of (X).
 
 ## Gameplay:
 The dealer deals asks the first player on their left to guess the card value (2 through Ace) of the card on top of the deck. The dealer checks if they are right; if the first guess is correct then the dealer takes 4. If the first guess is wrong then the dealer tells the player whether the card is Higher or Lower than their guess.
