@@ -8,20 +8,17 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Div} from 'react-native';
 
 
-type Header = {};
-export default class App extends Component<Header> {
+class Header extends Component {
     render() {
-        return (
-            <View style={styles.container}>
-                <Text>Some Text</Text>
-                <Text style={styles.welcome}>Welcome to React Native!</Text>
-                <Text style={styles.instructions}>To get started, edit App.js</Text>
-            </View>
-    );
-  }
+      return (
+        <Div style={styles.container}>
+            <Text style={styles.title}>Screw the Dealer</Text>
+        </Div>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
@@ -31,14 +28,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
-    welcome: {
+    title: {
         fontSize: 20,
         textAlign: 'center',
         margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
     },
 });

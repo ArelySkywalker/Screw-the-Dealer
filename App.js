@@ -9,6 +9,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import Header from './src/components/header';
 
 
 const instructions = Platform.select({
@@ -19,8 +20,7 @@ const instructions = Platform.select({
 });
 
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
     render() {
         return (
             <View style={styles.container}>
@@ -29,8 +29,8 @@ export default class App extends Component<Props> {
                 <Text style={styles.instructions}>To get started, edit App.js</Text>
                 <Text style={styles.instructions}>{instructions}</Text>
             </View>
-    );
-  }
+        );
+    }
 }
 
 const styles = StyleSheet.create({
