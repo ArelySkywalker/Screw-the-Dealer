@@ -1,10 +1,14 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import Card from './Card';
+import CardSection from './CardSection';
 
 export default CardDetail = (props) => {
     return (
-        <View>
-            <Text>{ props.card.value }</Text>
-        </View>
+        <Card>
+            <CardSection>
+                <Text>{ props.card.value }</Text>
+            </CardSection>
+        </Card>
     );
 };

@@ -26,7 +26,7 @@ export default class App extends Component {
         return (
             <View style={styles.container}>
                 <Header headerText={ 'Screw the Dealer' } />
-                <ScrollView style={styles.scrollview}>
+                <ScrollView>
                     <DeckList />
                 </ScrollView>
             </View>
@@ -39,7 +39,4 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5FCFF',
         flex: 1,
     },
-    scrollview: {
-        padding: 20,
-    }
 });
