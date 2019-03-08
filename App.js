@@ -1,5 +1,5 @@
 /**
- * Sample React Native App
+ * Screw the Dealer React Native App
  * https://github.com/facebook/react-native
  *
  * @format
@@ -8,16 +8,17 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Header from './src/Header/Header';
+import DeckList from './src/DeckList/DeckList';
 
 
-const instructions = Platform.select({
-    ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-    android:
-        'Double tap R on your keyboard to reload,\n' +
-        'Shake or press menu button for dev menu',
-});
+// const instructions = Platform.select({
+//     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+//     android:
+//         'Double tap R on your keyboard to reload,\n' +
+//         'Shake or press menu button for dev menu',
+// });
 
 
 export default class App extends Component {
@@ -25,11 +26,9 @@ export default class App extends Component {
         return (
             <View style={styles.container}>
                 <Header headerText={ 'Screw the Dealer' } />
-                <View style={styles.bodyWrapper}>
-                    <Text style={styles.welcome}>Welcome to my React Native App!</Text>
-                    <Text style={styles.instructions}>Code goes here...</Text>
-                    <Text style={styles.instructions}>{instructions}</Text>
-                </View>
+                <ScrollView style={styles.scrollview}>
+                    <DeckList />
+                </ScrollView>
             </View>
         );
     }
@@ -40,18 +39,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5FCFF',
         flex: 1,
     },
-    bodyWrapper: {
-        alignItems: 'center',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-        alignItems: 'center',
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
+    scrollview: {
+        padding: 20,
+    }
 });
