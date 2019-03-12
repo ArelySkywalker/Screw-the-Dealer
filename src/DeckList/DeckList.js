@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import CardDetail from '../CardDetail/CardDetail';
 
 
@@ -23,9 +23,9 @@ export default class DeckList extends Component {
     render() {
         console.log(this.state);
       return (
-            <View>
+            <ScrollView>
                 { this.renderMyDeck() }
-            </View>
+            </ScrollView>
         );
     }
 }

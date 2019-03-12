@@ -8,7 +8,7 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import Header from './src/Header/Header';
 import DeckList from './src/DeckList/DeckList';
 
@@ -26,9 +26,9 @@ export default class App extends Component {
         return (
             <View style={styles.container}>
                 <Header headerText={ 'Screw the Dealer' } />
-                <ScrollView>
+                <View>
                     <DeckList />
-                </ScrollView>
+                </View>
             </View>
         );
     }
